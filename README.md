@@ -11,16 +11,17 @@ set path=%PATH%;E:\xampp\mysql\bin
 ```
 
 ## How to solved utf8mb4_0900_ai_ci error
-```
+
 This is the eror for xampp server version error. If the source and destination xampp verser version
 are mismatch then you can get this error. suppose you source server is 8.0 and destination server 8.2
 then you will get this error.
+ 
 ```
-
-Solution
+### Solution
 After a little investigation, I found that the MySQL server running on the destination is an older version 
 than the source. So we got that the destination server doesn’t contain the required database collation.
 
 Then we do a little tweak in the backup file to resolve this. Edit the database backup file in text editor
 and replace “utf8mb4_0900_ai_ci” with “utf8mb4_general_ci” and “CHARSET=utf8mb4” with “CHARSET=utf8“.
+```
 
