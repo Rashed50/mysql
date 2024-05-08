@@ -24,8 +24,8 @@ Then we do a little tweak in the backup file to resolve this. Edit the database 
 and replace “utf8mb4_0900_ai_ci” with “utf8mb4_general_ci” and “CHARSET=utf8mb4” with “CHARSET=utf8“.
 ```
 
-# hello 
+#   
 ```
-fdsfdsfdsfds
+ 
  
 
