@@ -1,4 +1,4 @@
-# Mysql Ins and Outs
+# Large size (More then 200 MB)  Mysql database resotre using terminal in XMAPP Server
 
 ## Import Mysql database using command line :
 ```
@@ -25,6 +25,7 @@ and replace “utf8mb4_0900_ai_ci” with “utf8mb4_general_ci” and “CHARSE
 ```
 
 # hello 
-...
-this is deom
+```
+fdsfdsfdsfds
+ 
 
