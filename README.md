@@ -61,8 +61,49 @@ Then we do a little tweak in the backup file to resolve this. Edit the database 
 and replace “utf8mb4_0900_ai_ci” with “utf8mb4_general_ci” and “CHARSET=utf8mb4” with “CHARSET=utf8“.
 ```
 
-#   
+### my xampp server was shutdown unexpectedly and later on I open xampp server and trying to start mysql server its not working and show below error
+
+Error: MySQL shutdown unexpectedly.
+
+3:18:22 AM  [mysql] This may be due to a blocked port, missing dependencies, 
+
+3:18:22 AM  [mysql] improper privileges, a crash, or a shutdown by another method.
+
+3:18:22 AM  [mysql] Press the Logs button to view error logs and check
+
+3:18:22 AM  [mysql] the Windows Event Viewer for more clues
+
+3:18:22 AM  [mysql] If you need more help, copy and post this
+
+3:18:22 AM  [mysql] entire log window on the forums   
+
 ```
+This is a common issue with XAMPP, usually caused by a corrupted index file or a "lock" file left behind after the unexpected shutdown. Since your data is important, we will use the safe recovery method that doesn't delete your actual databases.
+
+Follow these steps exactly:
+
+1. The "Backup & Data" Fix (Most Successful)
+Go to your XAMPP installation folder (usually C:\xampp\mysql\).
+
+Rename the folder data to data_old.
+
+Create a new empty folder named data.
+
+Go into the backup folder (located at C:\xampp\mysql\backup).
+
+Copy all files from backup and paste them into your new data folder.
+
+Now, go back to data_old and copy these specific items:
+
+All your database folders (except mysql, performance_schema, and phpmyadmin).
+
+The file named ibdata1 (This is the most important file; it contains your table relationships).
+
+Paste these into the new data folder (Replace files when asked).
+
+Try starting MySQL from the XAMPP Control Panel.
+```
+
  
  
 
