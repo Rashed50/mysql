@@ -61,7 +61,7 @@ Then we do a little tweak in the backup file to resolve this. Edit the database 
 and replace “utf8mb4_0900_ai_ci” with “utf8mb4_general_ci” and “CHARSET=utf8mb4” with “CHARSET=utf8“.
 ```
 
-### my xampp server was shutdown unexpectedly and later on I open xampp server and trying to start mysql server its not working and show below error
+### my xampp server was shutdown unexpectedly and later on when I opened xampp server and trying to start mysql server, it was not working and show below error
 
 Error: MySQL shutdown unexpectedly.
 
